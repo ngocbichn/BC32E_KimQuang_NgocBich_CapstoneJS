@@ -1,0 +1,116 @@
+//background
+$bg-c1-dark: #000000;
+$bg-c2-dark: #030303;
+$bg-c1-light: #ffffff;
+//text-color
+$text-c1-light: #ffffff;
+$text-c2-light: #f7f7f7;
+$text-c1-dark: #000000;
+$text-c2-dark: #030303;
+//text-size
+$text-xxs: 10px;
+$text-xs: 12px;
+$text-s: 14px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-2-5xl: 25px;
+$text-3xl: 30px;
+$text-3-5xl: 35px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+$text-7xl: 70px;
+//text-font-weight
+$text-light: 300;
+$text-regular: 400;
+$text-medium: 500;
+$text-semibold: 600;
+$text-bold: 700;
+
+/**---------MIXIN---------*/
+@mixin text($fs: $text-base, $fw: $text-regular, $c: $text-c1-dark) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: $bg-c1-dark;
+            border: 1px solid #000000;
+            position: relative;
+
+            .navbar-brand {
+                img {
+                    position: absolute;
+                    width: 116px;
+                    height: 32px;
+                    left: 24px;
+                    top: 10px;
+                }
+            }
+
+            .nav-tools {
+                .nav-item {
+                    img {}
+
+                    span {}
+
+                    .nav-link {
+                        @include text($text-base, $text-light , $text-c2-light );
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+
+        .header-bottom {
+            position: relative;
+            height: 75px;
+
+            .navbar-nav {
+                position: relative;
+
+                .nav-link {
+                    @include text($text-2xl, $text-light , $text-c1-dark);
+                    line-height: 24px;
+                    margin-right: 24px;
+                }
+
+                .item-1 {
+                    font-weight: $text-regular;
+                    border-bottom: 2px solid #000000;
+                }
+
+            }
+        }
+    }
+}
+
+.carousel {
+    height: 530px;
+    background-color: $bg-c1-light;
+}

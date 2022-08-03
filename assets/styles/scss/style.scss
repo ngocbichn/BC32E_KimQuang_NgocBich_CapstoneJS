@@ -48,6 +48,16 @@ $text-bold: 700;
     padding: 0 15px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+        width: calc(100%/3);
+        padding: 0 15px;
+    }
+}
+
 .header {
     .container {
         display: flex;
@@ -113,4 +123,143 @@ $text-bold: 700;
 .carousel {
     height: 530px;
     background-color: $bg-c1-light;
+}
+
+.product-details {
+    height: 530px;
+}
+
+.relate-product {
+    height: 1044px;
+
+    .container {
+        h3 {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .row {
+            .col-4 {
+                height: 369px;
+                padding: 16px;
+
+                .card {
+                    height: 100%;
+                    width: 334px;
+
+                    .card-body {
+                        .item-img {
+                            position: absolute;
+                            width: 220px;
+                            height: 156px;
+                            left: 57px;
+                            top: 45px;
+                            // background: url(../../img/image-5.png);
+                        }
+
+                        .item-name {
+                            color: #000000;
+                            font-size: 24px;
+                            font-weight: 300;
+                            position: absolute;
+                            width: 200px;
+                            height: 30px;
+                            left: 18px;
+                            top: 200px;
+                        }
+
+                        .item-description {
+                            color: #CBC9C9;
+                            font-size: 20px;
+                            font-weight: 300;
+                            position: absolute;
+                            width: 200px;
+                            height: 30px;
+                            left: 18px;
+                            top: 235px;
+                        }
+                    }
+
+                    .card-footer {
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+
+
+                        .card-footer-left {
+                            background: #E1B067;
+                            position: absolute;
+                            width: 175px;
+                            height: 64px;
+                            left: 0px;
+                            top: 272px;
+
+                            button {
+                                width: 100%;
+                                text-align: center;
+                                line-height: 45px;
+                                font-size: 24px;
+                            }
+                        }
+
+                        .card-footer-right {
+                            background: #DEDDDC;
+                            position: absolute;
+                            width: 160px;
+                            height: 64px;
+                            right: 0px;
+                            top: 272px;
+                            text-align: center;
+
+                            b {
+                                line-height: 60px;
+                                font-weight: 600;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    height: 242px;
+
+    .container {
+        .row {
+            // padding: 32px;
+
+            .col {
+                h5 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                a {
+                    font-size: 12px;
+                    color: #000000;
+                }
+                p {
+                    font-size: 12px;
+                }
+
+                .HL {
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+        }
+
+        .row-top {
+            background-color: #f7f7f7;
+            padding: 16px;
+        }
+
+        .row-bot {
+            background-color: #ececec;
+            padding: 16px;
+        }
+    }
 }

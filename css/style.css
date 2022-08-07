@@ -152,6 +152,57 @@
   font-size: 24px;
 }
 
+.carousel {
+  position: relative;
+}
+.carousel .container .carousel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel .container .carousel-content .main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.carousel .container .carousel-content .main-content img {
+  width: 821px;
+  height: 392px;
+}
+.carousel .container .carousel-content .main-content .carousel_caption h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 48px;
+}
+.carousel .container .carousel-content .main-content .carousel_caption h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 24px;
+}
+.carousel .container .carousel-content .main-content .carousel_caption .btn-buyNow {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 24px;
+  background-color: #F8B653;
+  padding: 13px 35px;
+  margin-top: 20px;
+}
+.carousel .container .bg-img-bottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.carousel .container .bg-img-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .footer {
   height: 242px;
 }

@@ -5,6 +5,7 @@ $bg-c1-light: #ffffff;
 $bg-c2-light: #FFFCFC;
 $bg-c1-gray: #D9D9D9;
 $bg-c1-purple: #AE18E2;
+$bg-c1-primary: #F8B653;
 //text-color
 $text-c1-light: #ffffff;
 $text-c2-light: #f7f7f7;
@@ -226,6 +227,71 @@ $text-bold: 700;
             }
         }
     }
+}
+
+.carousel {
+    position: relative;
+
+    .container {
+
+
+        .carousel-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .polygon-left {}
+
+            .main-content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    width: 821px;
+                    height: 392px;
+                }
+
+                .carousel_caption {
+                    h3 {
+                        @include text($text-4xl, $text-light , $text-c1-dark );
+                        line-height: 48px;
+                    }
+
+                    h4 {
+                        @include text($text-2xl, $text-light , $text-c1-dark );
+                        line-height: 24px;
+                    }
+
+                    .btn-buyNow {
+                        @include text($text-2xl, $text-light , $text-c1-light );
+                        line-height: 24px;
+                        background-color: $bg-c1-primary;
+                        padding: 13px 35px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .polygon-right {}
+        }
+
+        .bg-img-bottom {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+
 }
 
 .footer {

@@ -34,7 +34,7 @@
                         <img src="./assets/img/image 8.png" alt="" />
                     </li>
                     <li class="nav-item">
-                        <span id="item-numbers"></span>
+                        <span id="item-numbers">(1)</span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="login">Login</a>
@@ -60,16 +60,17 @@
             <h3 class="title">Register</h3>
             <div class="row">
                 <div class="col-6 form-group">
-                    <input type="email" class="inputEmail form-control inp1" placeholder="email" />
+                    <input type="email" class="inputEmail form-control inp1" placeholder="email" id="inputEmail" />
                 </div>
                 <div class="col-6 form-group">
-                    <input type="text" class="inputName form-control inp2" placeholder="name" />
+                    <input type="text" class="inputName form-control inp2" placeholder="name" id="inputName" />
                 </div>
                 <div class="col-6 form-group">
-                    <input type="password" class="inputPassword form-control inp3" placeholder="password" />
+                    <input type="password" class="inputPassword form-control inp3" placeholder="password"
+                        id="inputPassword" />
                 </div>
                 <div class="col-6 form-group">
-                    <input type="number" class="inputPhone form-control inp4" placeholder="phone" />
+                    <input class="inputPhone form-control inp4" placeholder="phone" id="inputPhone" />
                 </div>
                 <div class="col-6 form-group">
                     <input type="password" class="confirmPassword form-control inp5" placeholder="password confirm" />
@@ -78,17 +79,13 @@
                     <span class="gender">Gender</span>
                     <span class="form-check-inline inp6">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="male">Male
-                        </label>
-                    </span>
-                    <span class="form-check-inline inp6">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="female">Female
+                            <input type="radio" class="form-check-input" value="1" name="gender" checked="checked">Male
+                            <input type="radio" class="form-check-input" value="0" name="gender">Female
                         </label>
                     </span>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-submit">Submit</button>
+                    <button class="btn btn-submit" id="btnSubmit">Submit</button>
                 </div>
             </div>
         </div>
@@ -146,6 +143,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- models -->
+    <script src="./models/User.js"></script>
+    <!-- controllers -->
+    <script src="./controllers/registerAjax.js"></script>
 </body>
 
 </html>

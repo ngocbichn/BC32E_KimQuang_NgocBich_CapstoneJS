@@ -92,7 +92,10 @@ $text-bold: 700;
                 .nav-item {
                     img {}
 
-                    span {}
+                    span {
+                        @include text($text-3xl, $text-light , $text-c1-light );
+                        line-height: 36px;
+                    }
 
                     .nav-link {
                         @include text($text-base, $text-light , $text-c2-light );
@@ -412,6 +415,7 @@ $text-bold: 700;
                         cursor: pointer;
                         box-shadow: 0 0 0 1px var(--color);
                         border-width: 0;
+                        margin-left: 20px;
 
 
                         &:focus-visible {

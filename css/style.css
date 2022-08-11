@@ -81,6 +81,83 @@
 .product-details {
   height: 530px;
 }
+.product-details .container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-details .container .prod-details-left {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.product-details .container .prod-details-left .prod-img-cont {
+  width: 100%;
+  position: relative;
+  width: 334px;
+  height: 335px;
+  text-align: center;
+  background-color: #f8f8f8;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-details .container .prod-details-left .prod-img-cont img {
+  width: 220px;
+  height: 156px;
+  position: relative;
+}
+.product-details .container .prod-details-right {
+  width: 60%;
+}
+.product-details .container .prod-details-right .prod-details-cont {
+  padding-top: 60px;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-name {
+  color: black;
+  font-weight: 300;
+  font-size: 30px;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-description {
+  color: #140101;
+  font-weight: 400;
+  font-size: 16px;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-status {
+  color: #1ED90E;
+  font-weight: 500;
+  font-size: 24px;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-sizes .size-box {
+  display: block;
+  text-align: center;
+  padding: 5px 8px;
+  background-color: #ccc;
+  color: #1E1D1D;
+  font-weight: 600;
+  font-size: 24px;
+}
+.product-details .container .prod-details-right .prod-details-cont .item-price {
+  padding: 12px 0 0 0;
+  color: #FC0303;
+  font-weight: 600;
+  font-size: 30px;
+}
+.product-details .container .prod-details-right .prod-details-cont .btn {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  color: #FFF8F8;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
 
 .relate-product {
   height: 1044px;
@@ -96,6 +173,9 @@
 .relate-product .container .row .col-4 .card {
   height: 100%;
   width: 334px;
+}
+.relate-product .container .row .col-4 .card .card-body {
+  background-color: #F8F8F8;
 }
 .relate-product .container .row .col-4 .card .card-body .item-img {
   position: absolute;

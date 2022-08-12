@@ -106,7 +106,7 @@
 }
 .product-details .container .prod-details-left .prod-img-cont img {
   width: 220px;
-  height: 156px;
+  height: 200px;
   position: relative;
 }
 .product-details .container .prod-details-right {
@@ -160,19 +160,25 @@
 }
 
 .relate-product {
-  height: 1044px;
+  padding-bottom: 50px;
 }
 .relate-product .container h3 {
   margin-top: 16px;
   text-align: center;
 }
 .relate-product .container .row .col-4 {
-  height: 369px;
+  height: 410px;
   padding: 16px;
 }
 .relate-product .container .row .col-4 .card {
   height: 100%;
   width: 334px;
+}
+.relate-product .container .row .col-4 .card:hover {
+  box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.51);
+  transition: all 0.5s;
 }
 .relate-product .container .row .col-4 .card .card-body {
   background-color: #F8F8F8;
@@ -184,23 +190,26 @@
   left: 57px;
   top: 45px;
 }
+.relate-product .container .row .col-4 .card .card-body .item-img img {
+  width: 220px;
+  height: 200px;
+}
 .relate-product .container .row .col-4 .card .card-body .item-name {
   color: #000000;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
   position: absolute;
-  width: 200px;
-  height: 30px;
+  width: 100%;
   left: 18px;
   top: 200px;
 }
 .relate-product .container .row .col-4 .card .card-body .item-description {
   color: #CBC9C9;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   position: absolute;
-  width: 200px;
-  height: 30px;
+  width: 95%;
+  height: 100px;
   left: 18px;
   top: 235px;
 }
@@ -215,7 +224,7 @@
   width: 175px;
   height: 64px;
   left: 0px;
-  top: 272px;
+  top: 85%;
 }
 .relate-product .container .row .col-4 .card .card-footer .card-footer-left button {
   width: 100%;
@@ -229,7 +238,7 @@
   width: 160px;
   height: 64px;
   right: 0px;
-  top: 272px;
+  top: 85%;
   text-align: center;
 }
 .relate-product .container .row .col-4 .card .card-footer .card-footer-right b {
